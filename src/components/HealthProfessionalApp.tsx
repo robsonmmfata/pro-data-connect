@@ -103,24 +103,33 @@ export const HealthProfessionalApp: React.FC = () => {
                 </div>
                 <div>
                   <h1 className="text-lg font-semibold text-foreground">
-                    Sistema de Gestão de Profissionais da Saúde
+                    Frontcash
                   </h1>
                   <p className="text-sm text-muted-foreground">
-                    MVP - Cadastro e Relatórios
+                    Gestão de Profissionais da Saúde
                   </p>
                 </div>
               </div>
               
-              <TabsList className="grid w-fit grid-cols-2 bg-medical-light">
-                <TabsTrigger value="register" className="flex items-center gap-2">
-                  <UserPlus className="h-4 w-4" />
-                  Cadastro
-                </TabsTrigger>
-                <TabsTrigger value="dashboard" className="flex items-center gap-2">
-                  <BarChart3 className="h-4 w-4" />
-                  Dashboard
-                </TabsTrigger>
-              </TabsList>
+              <div className="flex items-center gap-4">
+                <TabsList className="grid w-fit grid-cols-2 bg-medical-light">
+                  <TabsTrigger value="register" className="flex items-center gap-2">
+                    <UserPlus className="h-4 w-4" />
+                    Cadastro
+                  </TabsTrigger>
+                  <TabsTrigger value="dashboard" className="flex items-center gap-2">
+                    <BarChart3 className="h-4 w-4" />
+                    Dashboard
+                  </TabsTrigger>
+                </TabsList>
+                <Button 
+                  variant="outline" 
+                  onClick={() => window.location.href = '/login'}
+                  className="border-primary text-primary hover:bg-primary hover:text-white"
+                >
+                  Fazer Login
+                </Button>
+              </div>
             </div>
           </div>
         </div>
