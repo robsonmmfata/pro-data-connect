@@ -148,24 +148,6 @@ export const HealthProfessionalApp: React.FC = () => {
         </TabsContent>
       </Tabs>
 
-      {/* Backend Integration Notice */}
-      <div className="fixed bottom-4 right-4 z-50">
-        <div className="bg-white border border-medical-blue/20 shadow-medical rounded-lg p-4 max-w-sm">
-          <div className="flex items-start gap-3">
-            <div className="p-2 bg-medical-light rounded-lg">
-              <Settings className="h-5 w-5 text-medical-blue" />
-            </div>
-            <div>
-              <h3 className="font-semibold text-sm text-medical-blue">
-                Backend Integration
-              </h3>
-              <p className="text-xs text-muted-foreground mt-1">
-                Para funcionalidades completas (banco de dados, exportação, etc.), conecte ao Supabase.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
